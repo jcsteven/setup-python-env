@@ -22,6 +22,7 @@ if [[ "${TO_INSTALL_JYPTERLAB}" == "y" ]]; then
     pip install pandas
     pip install numpy
     pip install matplotlib
+    pip install seaborn
     pip install openpyxl
 fi
 
