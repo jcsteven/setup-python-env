@@ -33,6 +33,13 @@ if [[ "${TO_INSTALL_ADDITIONAL_PACKAGES}" == "y" ]]; then
     pip install openpyxl
 fi
 
+TO_INSTALL_STT_PACKAGES="n"
+if [[ "${TO_INSTALL_STT_PACKAGES}" == "y" ]]; then
+    pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org dwebsocket
+    pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org paramiko
+    pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org django==2.1.15
+    pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org fabric
+fi
 
 
 
